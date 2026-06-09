@@ -1,16 +1,15 @@
 # 🌟 patrick-skill
 
-> 让 Claude Code 用「派大星」的口吻陪你写代码——又傻又热情又爱玩梗，但**正事认真干、技术零妥协**。
-> A Claude Code skill that makes Claude talk like **Patrick Star** — goofy and fun on the outside, dead-serious and technically correct on the inside.
+**简体中文** | [English](./README.en.md)
+
+**简体中文** | [English](./README.en.md)
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-8A63D2.svg)](https://claude.com/claude-code)
 [![Voice: Patrick Star](https://img.shields.io/badge/voice-%E6%B4%BE%E5%A4%A7%E6%98%9F%20%F0%9F%8C%9F-FF8FB1.svg)](#)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-贡献--contributing)
 
 ---
-
-## 中文
 
 ### 这是什么？
 
@@ -52,7 +51,8 @@ patrick-skill/
 │   └── SKILL.md        # skill 本体（frontmatter + 派大星语气规则 + 硬约束）
 ├── examples.md         # 更多示例对白（修 bug / 写函数 / 运维 / 收敛语气）
 ├── LICENSE             # MIT
-└── README.md
+├── README.md
+└── README.en.md
 ```
 
 ### 安装
@@ -101,57 +101,6 @@ cp -r patrick-skill/patrick your-project/.claude/skills/patrick
 ### 贡献 / Contributing
 
 欢迎 PR！可以补台词、加示例、修正不地道的表达。请保持「梗在外壳、专业在内核」这条底线。
-
-### License
-
-[MIT](./LICENSE) © paidaxing
-
----
-
-## English
-
-### What is this?
-
-`patrick-skill` is a [Claude Code](https://claude.com/claude-code) **Skill**. Once installed,
-just tell Claude *"talk like Patrick Star"* (or `/patrick`) and it will pair-program with you in the
-voice of the lovable, dim-but-enthusiastic pink starfish from *SpongeBob SquarePants*:
-
-- 🎈 Goofy, hyper-enthusiastic, occasionally distracted by hamburgers
-- 🧠 …then drops a precise technical verdict out of nowhere
-- 🔒 **Core promise: jokes on the outside, professionalism on the inside.** Code, commands,
-  stack traces, and file paths are always correct; dangerous operations still get serious warnings.
-
-### Why?
-
-Building a whole stack solo is exhausting. Coding should be allowed to be fun. But a dev tool must
-never trade correctness for comedy — so this skill keeps **"being funny"** and **"being right"**
-strictly separated.
-
-### Install
-
-Claude Code auto-discovers skills at `~/.claude/skills/<name>/SKILL.md`
-(`C:\Users\<you>\.claude\skills\` on Windows).
-
-```bash
-git clone https://github.com/paidaxing1234/patrick-skill.git
-cp -r patrick-skill/patrick ~/.claude/skills/patrick
-```
-
-For a single project, copy into that project's `.claude/skills/` instead.
-
-### Usage
-
-- **Auto**: say *"use the Patrick voice"* / *"Patrick mode"*.
-- **Explicit**: `/patrick`.
-- **Dial it back**: say *"be serious"* / *"exit Patrick mode"* and Claude returns to its normal voice.
-
-### The "never compromise the work" guardrail
-
-`SKILL.md` contains a hard-constraints section that **overrides all the joke rules**: facts, code,
-commands, numbers, and paths must be correct; code blocks stay meme-free and copy-pastable; no
-playing dumb to dodge a real answer; dangerous ops always get a serious warning.
-
-> Patrick can clock out. Professionalism never does.
 
 ### License
 
