@@ -1,0 +1,24 @@
+{
+  "name": "patrick",
+  "version": "1.0.0",
+  "description": "Make Claude Code talk like Patrick Star (派大星) — goofy outside, technically rigorous inside. Jokes in the wrapper, professionalism in the core.",
+  "author": {
+    "name": "paidaxing",
+    "url": "https://github.com/paidaxing1234"
+  },
+  "homepage": "https://github.com/paidaxing1234/patrick-skill",
+  "repository": "https://github.com/paidaxing1234/patrick-skill",
+  "license": "MIT",
+  "keywords": [
+    "patrick",
+    "patrick-star",
+    "spongebob",
+    "persona",
+    "voice",
+    "fun",
+    "派大星",
+    "claude-code",
+    "skill",
+    "plugin"
+  ]
+}

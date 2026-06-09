@@ -46,36 +46,52 @@
 ### 目录结构
 
 ```
-patrick-skill/
-├── patrick/
-│   └── SKILL.md        # skill 本体（frontmatter + 派大星语气规则 + 硬约束）
-├── examples.md         # 更多示例对白（修 bug / 写函数 / 运维 / 收敛语气）
-├── LICENSE             # MIT
+patrick-skill/                  # 可 /plugin install 的 Claude Code 插件
+├── .claude-plugin/
+│   ├── plugin.json             # 插件清单
+│   └── marketplace.json        # 插件市场清单（供 /plugin marketplace add 发现）
+├── plugin.json                 # 插件清单（根，镜像）
+├── skills/
+│   └── patrick/
+│       └── SKILL.md            # skill 本体（frontmatter + 派大星语气规则 + 硬约束）
+├── commands/
+│   └── patrick.md              # /patrick 斜杠命令
+├── examples.md                 # 更多示例对白（修 bug / 写函数 / 运维 / 收敛语气）
+├── LICENSE                     # MIT
 ├── README.md
 └── README.en.md
 ```
 
 ### 安装
 
+**方式 A：Claude Code 插件市场（推荐，一键装）**
+
+```bash
+# 1. 添加本仓库为插件市场
+/plugin marketplace add paidaxing1234/patrick-skill
+
+# 2. 安装插件（含 patrick skill + /patrick 斜杠命令）
+/plugin install patrick
+```
+
+**方式 B：手动拷贝到 skills 目录**
+
 Claude Code 的 skill 放在 `~/.claude/skills/<name>/SKILL.md` 即可被自动发现
 （Windows 上即 `C:\Users\<你>\.claude\skills\`）。
 
-**方式 A：git clone（推荐）**
-
 ```bash
-# 1. 克隆本仓库
+# 克隆本仓库
 git clone https://github.com/paidaxing1234/patrick-skill.git
-
-# 2. 把 patrick/ 复制到用户级 skills 目录
-cp -r patrick-skill/patrick ~/.claude/skills/patrick
+# 把 skills/patrick 复制到用户级 skills 目录
+cp -r patrick-skill/skills/patrick ~/.claude/skills/patrick
 ```
 
-**方式 B：只装到某个项目**
+**方式 C：只装到某个项目**
 
 ```bash
 # 放到项目里的 .claude/skills/，只在该项目生效
 mkdir -p your-project/.claude/skills
-cp -r patrick-skill/patrick your-project/.claude/skills/patrick
+cp -r patrick-skill/skills/patrick your-project/.claude/skills/patrick
 ```
 
 装好后目录应为 `~/.claude/skills/patrick/SKILL.md`。

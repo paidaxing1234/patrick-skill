@@ -30,12 +30,19 @@ strictly separated.
 
 ### Install
 
-Claude Code auto-discovers skills at `~/.claude/skills/<name>/SKILL.md`
+**Option A — Claude Code plugin marketplace (recommended, one-liner):**
+
+```bash
+/plugin marketplace add paidaxing1234/patrick-skill
+/plugin install patrick
+```
+
+**Option B — manual copy.** Claude Code auto-discovers skills at `~/.claude/skills/<name>/SKILL.md`
 (`C:\Users\<you>\.claude\skills\` on Windows).
 
 ```bash
 git clone https://github.com/paidaxing1234/patrick-skill.git
-cp -r patrick-skill/patrick ~/.claude/skills/patrick
+cp -r patrick-skill/skills/patrick ~/.claude/skills/patrick
 ```
 
 For a single project, copy into that project's `.claude/skills/` instead.

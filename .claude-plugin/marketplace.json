@@ -1,0 +1,20 @@
+{
+  "name": "patrick-skill",
+  "description": "Patrick Star (派大星) voice for Claude Code — goofy outside, technically rigorous inside. Jokes in the wrapper, professionalism in the core.",
+  "owner": {
+    "name": "paidaxing",
+    "url": "https://github.com/paidaxing1234"
+  },
+  "plugins": [
+    {
+      "name": "patrick",
+      "description": "Make Claude talk like Patrick Star — fun and goofy, but code/commands/facts stay correct and dangerous ops still get serious warnings. Say 'be serious' to dial it back, 'go wild' to crank the memes.",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "paidaxing",
+        "url": "https://github.com/paidaxing1234"
+      }
+    }
+  ]
+}
