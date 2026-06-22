@@ -2,8 +2,7 @@
 
 **简体中文** | [English](./README.en.md)
 
-**简体中文** | [English](./README.en.md)
-
+> `patrick-skill` 是一个 [Claude Code](https://claude.com/claude-code) skill，让 Claude 用派大星（海绵宝宝里那只粉色海星）的口吻干活——梗在外壳、专业在内核，正事认真干、技术零妥协。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-8A63D2.svg)](https://claude.com/claude-code)
@@ -117,6 +116,14 @@ cp -r patrick-skill/skills/patrick your-project/.claude/skills/patrick
 ### 贡献 / Contributing
 
 欢迎 PR！可以补台词、加示例、修正不地道的表达。请保持「梗在外壳、专业在内核」这条底线。
+
+## 相关项目 / Related projects
+
+同一作者 paidaxing（Latency Hunter）的一人量化工具矩阵：
+
+- [**latency-hunter-toolkit**](https://github.com/paidaxing1234/latency-hunter-toolkit) —— 量化工程审查的 Claude Code 插件包（5 个 skill：回测照妖镜 / 热路径猎手 / 连接器锻造 / 数据照妖镜 / 风控体检），可 `/plugin install`。
+- [**crypto-trading-framework**](https://github.com/paidaxing1234/crypto-trading-framework) —— 低延迟 C++ 实盘量化交易框架（Binance / OKX）+ pybind11 策略层 + Vue3 监控前端。
+- [**quant-backtest-guard**](https://github.com/paidaxing1234/quant-backtest-guard) —— 回测照妖镜独立单装版（套装版在 latency-hunter-toolkit 里）。
 
 ### License
 

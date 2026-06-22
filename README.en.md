@@ -2,8 +2,7 @@
 
 [简体中文](./README.md) | **English**
 
-
-
+> `patrick-skill` is a [Claude Code](https://claude.com/claude-code) skill that makes Claude work in the voice of Patrick Star (the pink starfish from SpongeBob) — jokes on the outside, professionalism on the inside: the work stays serious, the engineering never compromised.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-8A63D2.svg)](https://claude.com/claude-code)
@@ -60,6 +59,14 @@ commands, numbers, and paths must be correct; code blocks stay meme-free and cop
 playing dumb to dodge a real answer; dangerous ops always get a serious warning.
 
 > Patrick can clock out. Professionalism never does.
+
+## Related projects
+
+The solo-quant tooling matrix by the same author, paidaxing (Latency Hunter):
+
+- [**latency-hunter-toolkit**](https://github.com/paidaxing1234/latency-hunter-toolkit) — a Claude Code plugin pack for quant-engineering review (5 skills: backtest audit / hot-path hunter / connector forge / data sanity / risk checkup), installable via `/plugin install`.
+- [**crypto-trading-framework**](https://github.com/paidaxing1234/crypto-trading-framework) — a low-latency C++ live trading framework (Binance / OKX) with a pybind11 strategy layer and a Vue3 monitoring frontend.
+- [**quant-backtest-guard**](https://github.com/paidaxing1234/quant-backtest-guard) — the standalone single-install edition of the backtest audit skill (the bundled edition lives inside latency-hunter-toolkit).
 
 ### License
 
